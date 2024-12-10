@@ -24,3 +24,5 @@ esConfig:
     xpack.security.transport.ssl.enabled: true
     xpack.security.transport.ssl.verification_mode: certificate
     xpack.security.http.ssl.enabled: true
+    discovery:
+      type: single-node
