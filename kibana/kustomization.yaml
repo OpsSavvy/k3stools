@@ -6,4 +6,4 @@ helmCharts:
     releaseName: kibana
     namespace: monitoring
     valuesFile: values.yaml
-    repo: https://grafana.github.io/helm-charts
+    repo: https://helm.elastic.co
