@@ -6,4 +6,5 @@ helmCharts:
     releaseName: elasticsearch
     namespace: monitoring
     valuesFile: values.yaml
+    version: 7.17.3
     repo: https://helm.elastic.co

@@ -17,7 +17,6 @@ ingress:
     - secretName: elasticsearch-tls
       hosts:
         - elasticsearch.loibis.com
-imageTag: 8.5.1-arm64
 esConfig:
   elasticsearch.yml: |
     xpack.security.enabled: true
