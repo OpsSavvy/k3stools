@@ -5,5 +5,5 @@ helmCharts:
   - name: elasticsearch
     releaseName: elasticsearch
     namespace: monitoring
-    values: values.yaml
+    valuesFile: values.yaml
     repo: https://helm.elastic.co
