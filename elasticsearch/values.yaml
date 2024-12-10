@@ -17,8 +17,7 @@ ingress:
     - secretName: elasticsearch-tls
       hosts:
         - elasticsearch.loibis.com
-discovery:
-  type: single-node
+imageTag: 8.5.1-arm64
 esConfig:
   elasticsearch.yml: |
     xpack.security.enabled: true
@@ -26,5 +25,4 @@ esConfig:
     xpack.security.transport.ssl.verification_mode: certificate
     xpack.security.http.ssl.enabled: true
     node.name: "elasticsearch-master-0"
-    cluster.name: "elasticsearch"
     discovery.type: single-node
