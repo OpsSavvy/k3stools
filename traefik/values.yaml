@@ -7,9 +7,6 @@ entryPoints:
     address: ":25565"
 additionalArguments:
   - --providers.kubernetescrd
-experimental:
-  plugins:
-    kubernetescrd: true
 providers:
   kubernetesCRD:
     enabled: true
