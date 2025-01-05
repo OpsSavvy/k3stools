@@ -1,16 +1,7 @@
-entryPoints:
-  web:
-    address: ":8080"
-  websecure:
-    address: ":8443"
+ports:
   minecraft:
-    address: ":25565"
-additionalArguments:
-  - --providers.kubernetescrd
-providers:
-  kubernetesCRD:
-    enabled: true
-  kubernetesIngress:
-    enabled: true
-crds:
-  create: true
+    port: 25565
+    expose: 
+      default: false
+    exposedPort: 25565
+    protocol: TCP
