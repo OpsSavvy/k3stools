@@ -3,3 +3,5 @@ entryPoints:
     address: ":8080"
   websecure:
     address: ":8443"
+  minecraft:
+    address: ":25565"
