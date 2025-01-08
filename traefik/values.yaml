@@ -19,3 +19,6 @@ ports:
     protocol: TCP
     tls:
       enabled: true
+additionalArguments:
+  - "--entrypoints.minecraft.address=:25565"
+  - "--entrypoints.minecraft.tls=true"
