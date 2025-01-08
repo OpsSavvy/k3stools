@@ -1,4 +1,16 @@
 ports:
+  http:
+    port: 8080
+    expose: 
+      default: true
+    exposedPort: 8080
+    protocol: TCP
+  https:
+    port: 8443
+    expose: 
+      default: true
+    exposedPort: 8443
+    protocol: TCP
   minecraft:
     port: 25565
     expose: 
