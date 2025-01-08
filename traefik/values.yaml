@@ -18,6 +18,4 @@ ports:
     exposedPort: 25565
     protocol: TCP
     tls:
-      enabled: true    
-additionalArguments:
-  - "--entrypoints.minecraft.address=:25565"
+      enabled: true
