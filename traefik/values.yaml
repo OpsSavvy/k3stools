@@ -20,5 +20,4 @@ ports:
     tls:
       enabled: true
 additionalArguments:
-  - "--entrypoints.minecraft.address=:25565"
-  - "--entrypoints.minecraft.tls=true"
+  - "--entryPoints='Name:minecraft Address::25565 TLS'"
