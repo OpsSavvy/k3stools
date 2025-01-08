@@ -13,14 +13,14 @@ ports:
     protocol: TCP
   minecraft:
     port: 25565
-    protocol: TCP
-    expose: true
+    expose: 
+      default: false
     exposedPort: 25565
+    protocol: TCP
     tls:
-      enabled: true
+      enabled: true    
 additionalArguments:
   - "--entrypoints.minecraft.address=:25565"
   - "--entrypoints.minecraft.transport.lifecyle.requestacceptgracetimeout=0s"
   - "--entrypoints.minecraft.forwardheaders.insecure=true"
   - "--entrypoints.minecraft.tls=true"
-  
