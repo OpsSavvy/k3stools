@@ -1,9 +1,9 @@
 ports:
   web:
-    port: 8080
+    port: 8181
     expose: 
       default: true
-    exposedPort: 8080
+    exposedPort: 8181
     protocol: TCP
   websecure:
     port: 8443
