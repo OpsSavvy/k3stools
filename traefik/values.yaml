@@ -22,5 +22,4 @@ ports:
 additionalArguments:
   - "--entrypoints.minecraft.address=:25565"
   - "--entrypoints.minecraft.transport.lifecyle.requestacceptgracetimeout=0s"
-  - "--entrypoints.minecraft.forwardheaders.insecure=true"
   - "--entrypoints.minecraft.tls=true"
