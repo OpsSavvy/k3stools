@@ -1,3 +1,7 @@
-udpServices:
-  configMap:
-    name: udp-services
+controller:
+  tcpServices:
+    configMap:
+      name: tcp-services
+  udpServices:
+    configMap:
+      name: udp-services
