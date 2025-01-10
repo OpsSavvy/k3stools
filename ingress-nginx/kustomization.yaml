@@ -6,10 +6,7 @@ helmCharts:
     releaseName: ingress-nginx
     namespace: ingress-nginx
     repo: https://kubernetes.github.io/ingress-nginx
-    values:
-      - udpServices:
-          configMap:
-            name: udp-services
+    valuesFile: values.yaml
 
 resources:
   - tcp-udp-configmap.yaml

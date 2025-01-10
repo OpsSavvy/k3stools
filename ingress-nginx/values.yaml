@@ -1,0 +1,3 @@
+udpServices:
+  configMap:
+    name: udp-services
