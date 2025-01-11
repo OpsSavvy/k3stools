@@ -1,3 +1,2 @@
 tcp:
   "25565": "minecraft/mc-router:25565"
-  "8080": "minecraft/mc-router:8080"
