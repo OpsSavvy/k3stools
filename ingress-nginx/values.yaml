@@ -1,4 +1,2 @@
 tcp:
-  "25565": "minecraft/minecraft-java:25565"
-udp:
-  "19132": "minecraft/minecraft-bedrock:19132"
+  "25565": "minecraft/mc-router:25565"
