@@ -9,7 +9,7 @@ ingress:
     kubernetes.io/tls-acme: "true"
     cert-manageir.io/cluster-issuer: "letsencrypt-prod"
   className: "nginx"
-  pathtype: ImplementationSpecific
+  pathType: ImplementationSpecific
   hosts:
     - host: kibana.loibis.com
       path: /
