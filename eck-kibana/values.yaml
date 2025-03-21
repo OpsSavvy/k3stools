@@ -1,0 +1,17 @@
+version: 8.17.0
+elasticsearchRef:
+  name: eck-elasticsearch
+  namespace: eck
+ingress:
+  enabled: true
+  pathtype: ImplementationSpecific
+  annotations:
+    kubernetes.io/ingress.class: nginx
+    cert-manageir.io/cluster-issuer: "letsencrypt-prod"
+  className: "nginx"
+  hosts:
+    - host: kibana.loibis.com
+      path: /
+  tls:
+    enabled: true
+    secretName: kibana-tls
