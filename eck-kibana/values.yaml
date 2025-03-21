@@ -4,11 +4,12 @@ elasticsearchRef:
   namespace: eck
 ingress:
   enabled: true
-  pathtype: ImplementationSpecific
   annotations:
     kubernetes.io/ingress.class: nginx
+    kubernetes.io/tls-acme: "true"
     cert-manageir.io/cluster-issuer: "letsencrypt-prod"
   className: "nginx"
+  pathtype: ImplementationSpecific
   hosts:
     - host: kibana.loibis.com
       path: /
