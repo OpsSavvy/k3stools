@@ -2,6 +2,16 @@ version: 8.17.0
 nodeSets:
 - name: default
   count: 1
+  volumeClaimTemplates:
+  - metadata:
+      name: elasticsearch-data
+    spec:
+      accessModes:
+      - ReadWriteOnce
+      resources:
+        requests:
+          storage: 5Gi
+      storageClassName: local-path
 ingress:
   enabled: true
   annotations:
