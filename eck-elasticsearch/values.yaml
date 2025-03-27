@@ -12,6 +12,13 @@ nodeSets:
         requests:
           storage: 5Gi
       storageClassName: local-path
+  podTemplate:
+    spec:
+      containers:
+      - name: elasticsearch
+        resources:
+          limits:
+            memory: 8Gi
 ingress:
   enabled: true
   annotations:
